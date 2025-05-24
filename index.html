@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hero">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <span class="menu-btn" onclick="openSidebar()">☰</span>
+    </nav>
+
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
+      <a href="#">Dashboard</a>
+      <a href="#">Settings</a>
+      <a href="#">Profile</a>
+    </div>
+
+    <div class="content">
+   <h1><span class="inter-font">Restaurant</span></h1>
+    </div>
+  </div>
+  <div>
+    <h1 class="secondheading">
+      Our Best Menu
+    </h1>
+  </div>
+  <!-- First section: Text left, Image right -->
+  <div class="home-layout">
+    <div class="layout-text">
+      <p>Our Blueberry Cake is a delicious treat made with soft, moist layers and filled with juicy blueberries in every bite. Topped with a light cream and fresh blueberry glaze, it’s the perfect mix of sweet and fruity. A favorite choice for dessert lovers—fresh, flavorful, and unforgettable!
+
+<p>
+    </div>
+    <div class="home-image">
+      <img src="./berry cake.jpg">
+    </div>
+  </div>
+  <!-- Second section: Text right, Image Left -->
+  <div class="home-layout reverse1">
+    <div class="layout-text1">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ut aliquam dicta quod deserunt soluta!</p>
+    </div>
+    <div class="home-image1">
+      <img src="./pexels-photo-14930728.jpeg">
+    </div>
+  </div>
+  <script>
+    function openSidebar() {
+      document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeSidebar() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+</body>
+</html>
